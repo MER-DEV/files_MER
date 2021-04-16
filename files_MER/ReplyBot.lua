@@ -57,7 +57,7 @@ send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 return false 
 end
 if text == 'نورت' or text == 'منور' or text == 'منوره' or text == 'نورتي' then
-{' غحح اشتاقلك 🥺💘','جاووز ڪلبي 💘','اشوفڪ بخير ڪيڪتي💘🌈 '} 
+local texting = {'اعرف بنفسي ضوة لتلح 💕🤸‍♀️','فدوةة من بعدك 💘🌈'}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 return false 
 end
