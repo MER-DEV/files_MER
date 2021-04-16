@@ -18,26 +18,17 @@ end --- if line 15
 end --- if line 4 
 -- ردود غير المطور -- 
 if not DevBot(msg) then
-iif text == "السلام عليكم"  then      
+if text == "سلام عليكم"  then      
 local namebot = {
 'ياهلا وعليڪم السلام عمغي 💘',
+'عليـگم آلسـلآم تآج رآسـي 💞',
 'وعليڪم سلام ياڪمر 💕',
-'وعـليـكم الـسلام يـحلو 🍇,
+'وعـليـكم الـسلام يـحلو 🍇',
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
 return false 
 end
-if text == 'مرحبا' then
-send(msg.chat_id_, msg.id_,'ههلا كلبي')
-return false
-end --- if line 25
-if text == 'باي' then
-send(msg.chat_id_, msg.id_,'الله وياك حياتي')
-return false
-end --- if line 29
-end --- if line 20
-end --- if line 3
 if text == 'تفعيل ردود البوت' and Owner(msg) then
 database:del(bot_id..'Reply:Mute'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'*⋄︙تم تفعيل ردود البوت*')
