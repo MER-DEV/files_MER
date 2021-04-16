@@ -18,18 +18,16 @@ end --- if line 15
 end --- if line 4 
 -- ردود غير المطور -- 
 if not DevBot(msg) then
-if text == 'هلو' then
-send(msg.chat_id_, msg.id_,'ههلو ، 🥳😹💞')
-return false
-end --- if line 21
-if text == "السلام عليكم" or text == "سلام عليكم" or text == "سلامن عليكم" then
-send(msg.chat_id_, msg.id_,'ياهلا وعليڪم السلام عمغي 💘,وعليڪم سلام ياڪمر 💕')
-return false
-end --- if line 21
-if text == "شلونك" or text == "شلونكم" or text == "شونك" or text == "شلونج" or text == "شونج" then
-send(msg.chat_id_, msg.id_,'تمام عمغي الحلو💘,حبيبيوالله اتس اوڪڪي وانت شحوالڪ 💘🦦')
-return false
-end --- if line 21
+iif text == "السلام عليكم"  then      
+local namebot = {
+'ياهلا وعليڪم السلام عمغي 💘',
+'وعليڪم سلام ياڪمر 💕',
+'وعـليـكم الـسلام يـحلو 🍇,
+}
+name = math.random(#namebot)
+send(msg.chat_id_, msg.id_, namebot[name]) 
+return false 
+end
 if text == 'مرحبا' then
 send(msg.chat_id_, msg.id_,'ههلا كلبي')
 return false
