@@ -1,4 +1,3 @@
-DevBotTele:
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Mute'..msg.chat_id_) then
