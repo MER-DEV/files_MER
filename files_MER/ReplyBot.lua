@@ -300,7 +300,7 @@ return false
 end
 end
 
-iif text == 'تفعيل ردود البوت' and Owner(msg) then
+if text == 'تفعيل ردود البوت' and Owner(msg) then
 database:del(bot_id..'Reply:Mute'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'*⋄︙تم تفعيل ردود البوت*')
 return false
